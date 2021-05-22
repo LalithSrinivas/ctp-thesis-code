@@ -2,6 +2,7 @@
 
 ## Init
 
+- Author's source code can be found [here](https://github.com/uclnlp/ctp)
 - Thesis report can be found [here](https://github.com/LalithSrinivas/btp_thesis)
 - Freebase dataset files were located at /home/baadalvm/data/fb15k-237 directory. The directory has train, test, dev data files in CSV format.
 - We have used ```free -mh``` to observe the memory utilized by a model.
