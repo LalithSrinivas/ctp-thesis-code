@@ -5,9 +5,9 @@
 - Author's source code can be found [here](https://github.com/uclnlp/ctp)
 - Thesis report can be found [here](https://github.com/LalithSrinivas/btp_thesis)
 - Freebase dataset files were located at /home/baadalvm/data/fb15k-237 directory. The directory has train, test, dev data files in CSV format.
-- We have used ```free -mh``` to observe the memory utilized by a model.
-- We have added a few print statements in the code to observe time taken for to run that segment of code.
-- We have used *profilehooks* to identify bottlenecks.
+- Used ```free -mh``` to observe the memory utilized by a model.
+- Added a few print statements in the code to observe time taken to run that segment of code.
+- Used *profilehooks* to identify bottlenecks.
 
 ## Original CTP Execution
 
@@ -60,9 +60,9 @@
                               -k 100 --top-k 100 --transe-eval --load-transe fb-transe-params.txt
     ```
 
-- The TransE evaluation will happen only when the **--transe-eval** argument is provided, else the normal evaluation will take place.
+- The TransE evaluation will happen only when the **--transe-eval** argument is provided, else normal evaluation (i.e. CTP evaluation) takes place.
 - The KNN search is performed over TransE embedding space as mentioned before. For this, we have to train the TransE model and store the embeddings.
-- As you can see in the above commands, the saved TransE embeddings are saved using the argument **--load-transe**.
+- As you can see in the above commands, the saved TransE embeddings are loaded by providing the file name to the **--load-transe** argument.
 
 ## Training, Saving TransE
 
@@ -76,4 +76,4 @@
                     --save fb-transe-params.txt --model transe
 ```
 
-- The *"--model"*, *"--save"* arguments take care of choosing the training model and saving location respectively.
+- The *"--model"*, *"--save"* arguments take care of *opting for* the training model and *saving location* parts respectively.
